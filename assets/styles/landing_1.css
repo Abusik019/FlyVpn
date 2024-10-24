@@ -1,0 +1,162 @@
+@import url('https://fonts.cdnfonts.com/css/body-grotesque-trial');
+/* 
+font-family: 'Body Grotesque Trial', sans-serif;
+font-family: 'Body Grotesque Fit Trial', sans-serif;
+font-family: 'Body Grotesque Large Trial', sans-serif;
+font-family: 'Body Grotesque Slim', sans-serif; 
+*/
+
+@font-face {
+    font-family: "Body Grotesque Regular Trial";
+    src: url("../fonts/Body-Grotesque-Regular-trial.ttf");
+}
+
+@font-face {
+    font-family: "Body Grotesque Bold Trial";
+    src: url("../fonts/Body-Grotesque-Bold-trial.ttf");
+}
+
+body{
+    font-family: 'Body Grotesque Trial', sans-serif;
+
+    max-width: 1350px;
+
+    height: fit-content;
+}
+
+.header{
+    padding: 20px;
+}
+
+.navbar{
+    height: 50px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 60px;
+
+    position: relative;
+}
+
+.title_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title_container > h1{
+    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.nav_items{
+    width: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_items > li{
+    font-family: 'Body Grotesque Regular Trial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    cursor: pointer;
+}
+
+.download_btn{
+    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 138px;
+    height: 54px;
+
+    padding: 15px 20px;
+    box-sizing: border-box;
+
+    border-radius: 16px;
+
+    position: absolute;
+    right: 0;
+}
+
+.header_content{
+    margin-top: 150px;
+
+    max-width: 1170px;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-hd_container{
+    width: 670px;
+}
+
+.left-hd_container > h2{
+    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+}
+
+.left-hd_container > p{
+    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+    margin-top: 40px;
+}
+
+.buttons-hd_container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    margin-top: 70px;
+}
+
+.btn_download{
+    width: 158px;
+    height: 64px;
+
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+    border-radius: 16px;
+
+    font-family: "Body Grotesque Bold Trial";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+
+    box-shadow: 0px 5px 15px 0px #FFFFFF33;
+}
+
+.btn_try{
+    width: 173px;
+    height: 64px;
+
+    padding: 20px 30px;
+    box-sizing: border-box;
+
+    border-radius: 16px;
+
+    font-family: "Body Grotesque Bold Trial";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+
+    color: #fff;
+    background-color: #000;
+
+    border: 1px solid var(--button-outline_default, #FFFFFF)
+}
