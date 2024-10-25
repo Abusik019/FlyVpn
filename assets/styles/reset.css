@@ -24,6 +24,7 @@ body {
     background-color: #000;
     color: #fff;
     margin: 0 auto;
+    padding: 20px;
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
