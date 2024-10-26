@@ -2,19 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
     <link rel="stylesheet" href="../assets/styles/landing_1.css">
+    <link rel="stylesheet" href="../assets/styles/mobile_lending.css" media="screen and (orientation: portrait)">
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <h1>Fly vpn</h1>
+            <!-- adaptive -->
+            <button class="burger-menu"><img src="../assets/images/icons/burger-menu.svg" alt="burger-menu"></button>
+             <!-- adaptive -->
             <ul class="nav_items">
-                <li>Главная</li>
-                <li>Почему именно мы?</li>
-                <li>Как установить</li>
+                <li><a href="#navbar">Главная</a></li>
+                <li><a href="#advantages">Почему именно мы?</a></li>
+                <li><a href="#guide">Как установить</a></li>
             </ul>
             <button class="download_btn">Установить</button>
         </nav>
@@ -37,7 +41,7 @@
         </section>
     </header>
     <main class="main">
-        <section class="advantages">
+        <section class="advantages" id="advantages">
             <h2>Быстрый, безопасный и доступный VPN для всех ваших нужд.</h2>
             <ul class="advantages_container">
                 <li>
@@ -116,34 +120,56 @@
                 <button>Установить vpn</button>
             </div>
         </section>
-        <section class="guide">
+        <section class="guide" id="guide">
             <h2>молниеносное подключение</h2>
             <h3>Видео инструкция</h3>
             <ul class="dropdown_pictures">
                 <li class="for_macos">
                     <img src="../assets/images/icons/macos.svg" alt="macos">
                     <h2>Для Macos</h2>
-                    <button><img src="../assets/images/icons/open-arrow.svg" alt="arrow"></button>
+                    <button><img src="../assets/images/icons/close-arrow.svg" alt="arrow"></button>
                 </li>
+                <img class="image" src="../assets/images/macos.png" alt="macos">
                 <li class="for_windows">
                     <img src="../assets/images/icons/windows.svg" alt="windows">
                     <h2>Для Windows</h2>
                     <button><img src="../assets/images/icons/close-arrow.svg" alt="arrow"></button>
                 </li>
+                <img src="../assets/images/macos.png" alt="macos">
                 <li class="for_ios">
                     <img src="../assets/images/icons/app-store.svg" alt="app-store">
                     <h2>Для IOS</h2>
                     <button><img src="../assets/images/icons/close-arrow.svg" alt="arrow"></button>
                 </li>
+                <img src="../assets/images/macos.png" alt="macos">
                 <li class="for_android">
                     <img src="../assets/images/icons/google-play.svg" alt="google-play">
                     <h2>Для Android</h2>
                     <button><img src="../assets/images/icons/close-arrow.svg" alt="arrow"></button>
                 </li>
+                <img src="../assets/images/macos.png" alt="macos">
             </ul>
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="decor_elements">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <section class="footer-content">
+            <div class="footer-info">
+                <h2>Fly vpn</h2>
+                <ul>
+                    <li><a href="#navbar">Главная</a></li>
+                    <li><a href="#advantages">Почему именно мы?</a></li>
+                    <li><a href="#guide">Как установить</a></li>
+                </ul>
+                <button>Установить</button>
+            </div>
+            <h2>© 2024 FlyVpn. Все права защищены</h2>
+        </section>
+    </footer>
 
     <script src="../scripts/index.js" type="module"></script>
 </body>

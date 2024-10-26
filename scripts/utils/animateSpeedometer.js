@@ -1,7 +1,7 @@
 export function animateSpeedometer(targetSpeed) {
     const speedDisplay = document.getElementById('speed');
 
-    let currentSpeed = 0;
+    let currentSpeed = 200;
     const speedInterval = setInterval(() => {
         if (currentSpeed >= targetSpeed) {
             clearInterval(speedInterval);
@@ -9,5 +9,5 @@ export function animateSpeedometer(targetSpeed) {
             currentSpeed += 5;  
             speedDisplay.firstElementChild.textContent = currentSpeed;
         }
-    }, 56);  
+    }, 70);  
 }
