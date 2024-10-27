@@ -14,4 +14,25 @@ export function animateSpeedometer(targetSpeeds) {
             speedDisplay.firstElementChild.textContent = currentSpeed;
         }
     }, intervalTime);  
+
+    const style = document.createElement('style');
+    style.type = 'text/css';
+
+    // Определяем анимацию keyframes
+    const keyframes = `
+    @keyframes rotateNeedle {
+        0% {
+            transform: rotate(-140deg);
+        }
+        100% {
+            transform:  rotate(140deg);     
+        }
+    }
+    `;
+
+    // Добавляем keyframes в стиль
+    style.innerHTML = keyframes;
+
+    // Добавляем элемент стиля в head
+    document.head.appendChild(style);
 }

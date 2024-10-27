@@ -256,15 +256,6 @@ body{
     z-index: 1;
 }
 
-@keyframes rotateNeedle {
-    0% {
-        transform: rotate(-140deg);
-    }
-    100% {
-        transform:  rotate(140deg);     
-    }
-}
-
 .speed {
     position: absolute;
     bottom: 50px;
@@ -376,8 +367,8 @@ body{
 }
 
 .global_coverage > img{
-    width: 350px;
-    height: 350px;
+    max-width: 350px;
+    max-height: 350px;
     object-fit: cover;
 }
 
@@ -440,7 +431,8 @@ body{
 }
 
 .protect > img{
-    width: 670px;
+    max-width: 670px;
+    max-height: 620px;
     object-fit: cover;
 }
 
