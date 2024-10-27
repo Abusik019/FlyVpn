@@ -441,7 +441,6 @@ body{
 
 .protect > img{
     width: 670px;
-    height: 620px;
     object-fit: cover;
 }
 

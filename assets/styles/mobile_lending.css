@@ -4,6 +4,10 @@ html {
 }
 
 @media screen and (orientation: portrait) and (max-width: 576px) {
+    button{
+        color: #000;
+    }
+
     body {
         font-family: 'Body Grotesque Trial', sans-serif;
         max-width: 567px;
