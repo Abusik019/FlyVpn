@@ -1,5 +1,54 @@
 import { animateSpeedometer } from './utils/animateSpeedometer.js';
 
+const targetSpeeds = [
+    {
+        target: 360,
+        time: 130,
+    },
+    {
+        target: 435,
+        time: 100,
+    },
+    {
+        target: 325,
+        time: 160,
+    },
+    {
+        target: 470,
+        time: 80,
+    },
+    {
+        target: 630,
+        time: 50,
+    },
+    {
+        target: 670,
+        time: 45,
+    },
+    {
+        target: 650,
+        time: 47.5,
+    },
+    {
+        target: 540,
+        time: 65,
+    },
+    {
+        target: 455,
+        time: 85,
+    },
+    {
+        target: 430,
+        time: 97,
+    },
+    {
+        target: 510,
+        time: 75,
+    },
+]
+
+animateSpeedometer(targetSpeeds);  
+
 const   changePictureBtn = document.getElementById('change-picture'),
         protectImage = document.getElementById('start-now_img'),
         line1 = document.getElementById('line_1'),
@@ -17,22 +66,19 @@ changePictureBtn.addEventListener("mouseenter", () => {
     line2.style.backgroundColor = '#fff';
 })
 
-window.onload = function() {
-    animateSpeedometer(500);  
-};
 
 
 // Dropdown
 document.querySelectorAll('.dropdown_pictures > li').forEach(item => {
     item.querySelector('button').addEventListener('click', () => {
-        const image = item.nextElementSibling;
+        const video = item.nextElementSibling;
         const arrowIcon = item.querySelector('button img');
 
-        if (!image.classList.contains('show')) {
-            image.classList.add('show');
+        if (!video.classList.contains('show')) {
+            video.classList.add('show');
             arrowIcon.src = '../assets/images/icons/open-arrow.svg'; 
         } else {
-            image.classList.remove('show');
+            video.classList.remove('show');
             arrowIcon.src = '../assets/images/icons/close-arrow.svg'; 
         }
     });
