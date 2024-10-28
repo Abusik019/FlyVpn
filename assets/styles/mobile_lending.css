@@ -3,7 +3,7 @@ html {
     text-size-adjust         : none
 }
 
-@media screen and (orientation: portrait) and (max-width: 576px) {
+@media screen and (orientation: portrait) and (max-width: 768px) {
     button{
         color: #000;
     }
