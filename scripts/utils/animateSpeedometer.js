@@ -5,7 +5,7 @@ export function animateSpeedometer(targetSpeeds) {
     const targetSpeed = randomTarget.target;
     const intervalTime = randomTarget.time;
 
-    let currentSpeed = 200;
+    let currentSpeed = 0;
     const speedInterval = setInterval(() => {
         if (currentSpeed >= targetSpeed) {
             clearInterval(speedInterval);

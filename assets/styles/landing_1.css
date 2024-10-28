@@ -84,6 +84,14 @@ body{
     color: #fff;
 }
 
+#download-btn_inside{
+    display: none;
+}
+
+.line_3{
+    display: none;
+}
+
 .download_btn{
     font-family: "Body Grotesque Bold Trial", sans-serif;
     font-size: 16px;

@@ -7,50 +7,17 @@ const   changePictureBtn = document.getElementById('change-picture'),
         line2 = document.getElementById('line_2'),
         speedometer = document.querySelector('.speedometer'),
         targetSpeeds = [
-            {
-                target: 360,
-                time: 130,
-            },
-            {
-                target: 435,
-                time: 100,
-            },
-            {
-                target: 325,
-                time: 160,
-            },
-            {
-                target: 470,
-                time: 80,
-            },
-            {
-                target: 630,
-                time: 50,
-            },
-            {
-                target: 670,
-                time: 45,
-            },
-            {
-                target: 650,
-                time: 47.5,
-            },
-            {
-                target: 540,
-                time: 65,
-            },
-            {
-                target: 455,
-                time: 85,
-            },
-            {
-                target: 430,
-                time: 97,
-            },
-            {
-                target: 510,
-                time: 75,
-            },
+            { target: 325, time: 70 },
+            { target: 360, time: 60 },
+            { target: 430, time: 52 },
+            { target: 435, time: 51 },
+            { target: 455, time: 47 },
+            { target: 470, time: 45 },
+            { target: 510, time: 43 },
+            { target: 540, time: 40 },
+            { target: 630, time: 37.5 },
+            { target: 650, time: 35.6 },
+            { target: 670, time: 33 },
         ];
 
         
@@ -99,25 +66,27 @@ document.querySelectorAll('.dropdown_pictures > li').forEach(item => {
 // Burger menu
 const burgerBtn = document.querySelector('.burger-menu');
 const navItems = document.querySelector('.nav_items');
-const downloadBtn = document.querySelector('.download_btn');
 const btnImg = burgerBtn.firstChild;
+// Stop scroll function
+const scrollHandler = () => {
+    window.scrollTo({ top: 0 });
+};
 
 burgerBtn?.addEventListener('click', () => {
     navItems.classList.toggle('open'); 
         
     if(navItems.classList.contains('open')){
         btnImg.src ='../assets/images/icons/krestik.svg';
-        downloadBtn.style.display = 'block';
+        window.addEventListener('scroll', scrollHandler)
     } else{
         btnImg.src ='../assets/images/icons/burger-menu.svg'
-        downloadBtn.style.display = 'none';
+        window.removeEventListener('scroll', scrollHandler)
     }
 })
  
 document.querySelectorAll('.nav_items > li').forEach(item => {
     item.addEventListener('click', () => {
         navItems.classList.remove('open');
-        downloadBtn.style.display = 'none';
         btnImg.src ='../assets/images/icons/burger-menu.svg'
     })
 })
