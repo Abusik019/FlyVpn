@@ -88,5 +88,6 @@ document.querySelectorAll('.nav_items > li').forEach(item => {
     item.addEventListener('click', () => {
         navItems.classList.remove('open');
         btnImg.src ='../assets/images/icons/burger-menu.svg'
+        window.removeEventListener('scroll', scrollHandler)
     })
 })
