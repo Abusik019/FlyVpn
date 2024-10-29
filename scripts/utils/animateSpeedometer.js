@@ -21,10 +21,10 @@ export function animateSpeedometer(targetSpeeds) {
     const keyframes = `
     @keyframes rotateNeedle {
         0% {
-            transform: rotate(-145deg);
+            transform: rotate(-142deg);
         }
         100% {
-            transform:  rotate(145deg);     
+            transform:  rotate(142deg);     
         }
     }
     `;
