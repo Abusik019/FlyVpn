@@ -16,6 +16,10 @@ html {
         box-sizing: border-box;
     }
 
+    html, body {
+        touch-action: manipulation; 
+    }
+
     .header{
         width: 100%;
     }
