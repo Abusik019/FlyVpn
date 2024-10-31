@@ -48,7 +48,7 @@ changePictureBtn.addEventListener("mouseenter", () => {
 
 // Dropdown
 document.querySelectorAll('.dropdown_pictures > li').forEach(item => {
-    item.querySelector('button').addEventListener('click', () => {
+    item.addEventListener('click', () => {
         const video = item.nextElementSibling;
         const arrowIcon = item.querySelector('button img');
 

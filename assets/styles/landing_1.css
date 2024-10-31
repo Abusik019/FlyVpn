@@ -1,12 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/body-grotesque-trial');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-/* 
-font-family: 'Body Grotesque Trial', sans-serif;
-font-family: 'Body Grotesque Fit Trial', sans-serif;
-font-family: 'Body Grotesque Large Trial', sans-serif;
-font-family: 'Body Grotesque Slim', sans-serif; 
-*/
+
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -293,6 +288,8 @@ body{
 }
 
 .advantages{
+    position: relative;
+
     max-width: 1170px;
     height: fit-content;
     
@@ -716,6 +713,8 @@ body{
     gap: 15px;
 
     position: relative;
+
+    cursor: pointer;
 }
 
 .dropdown_pictures > li > button{
@@ -830,4 +829,48 @@ body{
     color: #8A8A8A;
 
     margin-top: 46px;
+}
+
+.ellipse-1, .ellipse-2, .ellipse-4{
+    position: absolute;
+
+    border-radius: 50%;
+
+    width: 613px;
+    height: 422px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    z-index: -1;
+
+    backdrop-filter: blur(244.8000030517578px);
+
+    background-image: url('../images/ellipse_2.png');
+}
+
+.ellipse-1{
+    top: 0;
+    left: -130px;
+
+    transform: rotate(21.23deg);
+}
+
+.ellipse-2{
+    bottom: -300px;
+    left: -180px;
+
+    transform: rotate(-30deg);
+}
+
+.ellipse-4{
+    top: -100px;
+    right: 0px;
+
+    transform: rotate(19deg);
+}
+
+.footer{
+    position: relative;
 }
