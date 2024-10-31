@@ -831,13 +831,10 @@ body{
     margin-top: 46px;
 }
 
-.ellipse-1, .ellipse-2, .ellipse-4{
+.ellipse-1, .ellipse-2, .ellipse-3, .ellipse-4{
     position: absolute;
 
     border-radius: 50%;
-
-    width: 613px;
-    height: 422px;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -848,29 +845,60 @@ body{
     backdrop-filter: blur(244.8000030517578px);
 
     background-image: url('../images/ellipse_2.png');
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 70%);
+
 }
 
 .ellipse-1{
-    top: 0;
-    left: -130px;
+    top: -300px;
+    left: -200px;
 
-    transform: rotate(21.23deg);
+    width: 850px;
+    height: 943px;
+
+    transform: rotate(-21.23deg);
 }
 
 .ellipse-2{
-    bottom: -300px;
+    bottom: -500px;
     left: -180px;
 
-    transform: rotate(-30deg);
+    width: 473px;
+    height: 968px;
+
+    background-image: url('../images/ellipse_3.png');
+
+    z-index: -2;
+}
+
+.ellipse-3{
+    right: 0px;
+    bottom: -400px;
+
+    width: 669px;
+    height: 1037px;
+
+    transform: rotate(-71deg);
+    background-image: url('../images/ellipse_5.png');
 }
 
 .ellipse-4{
-    top: -100px;
-    right: 0px;
+    top: -200px;
+    right: -100px;
+
+    width: 901px;
+    height: 560px;
 
     transform: rotate(19deg);
+    background-image: url('../images/ellipse_4.png');
 }
 
 .footer{
+    position: relative;
+    overflow: hidden;
+}
+
+.main{
+    overflow: hidden;
     position: relative;
 }
