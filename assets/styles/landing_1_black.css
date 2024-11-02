@@ -36,8 +36,8 @@ body{
     
     overflow-x: hidden; 
 
-    background-color: #fff;
-    color: #000;
+    background-color: #000 !important;
+    color: #fff;
 }
 
 .navbar{
@@ -79,7 +79,7 @@ body{
     line-height: 24px;
 
     cursor: pointer;
-    color: #000000;
+    color: #fff;
 }
 
 #download-btn_inside{
@@ -105,9 +105,6 @@ body{
 
     position: absolute;
     right: 0;
-
-    background-color: #000;
-    color: #fff;
 }
 
 .header_content{
@@ -170,10 +167,7 @@ body{
     font-weight: 700;
     line-height: 24px;
 
-    box-shadow: 0px 5px 15px 0px #00000033;
-
-    background-color: #000;
-    color: #fff;
+    box-shadow: 0px 5px 15px 0px #FFFFFF33;
 
     position: absolute;
     left: 0;
@@ -206,10 +200,10 @@ body{
     font-weight: 700;
     line-height: 24px;
 
-    color: #000000;
-    background-color: transparent;
+    color: #fff;
+    background-color: #000;
 
-    border: 1px solid var(--button-outline_default, #000000);
+    border: 1px solid var(--button-outline_default, #FFFFFF);
 
     position: absolute;
     right: 0;
@@ -218,9 +212,15 @@ body{
 }
 
 .btn_try:hover{
-    background-color: #252525;
-    color: #fff;
+    box-shadow: 0px 5px 15px 0px #FFFFFF33;
 }
+
+.btn_try:active{
+    box-shadow: none;
+
+    background-color: #252525;
+}
+
 
 .speedometer {
     position: relative;
@@ -255,7 +255,7 @@ body{
     transform: rotate(-132deg);  
     clip-path: polygon(26% 0, 69% 0, 93% 100%, 7% 100%);    
 
-    background: linear-gradient(180deg, #000000 0%, rgba(62, 172, 232, 0) 100%);
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(62, 172, 232, 0) 100%);
 
     animation: rotateNeedle 5s ease-in-out forwards;
 
@@ -269,7 +269,7 @@ body{
 
     transform: translateX(-50%);
 
-    color: rgb(0, 0, 0);
+    color: white;
 
     z-index: 1;
 }
@@ -339,7 +339,7 @@ body{
 
     border-radius: 16px;
 
-    background-color: #E9E9E9;
+    background: var(--card-card_background_primary_default, #121212);
 }
 
 .advantages_container > li > img{
@@ -355,11 +355,19 @@ body{
     line-height: 24px;
 }
 
+.advantages_container > li > h2 > span{
+    font-family: "Space Grotesk", sans-serif;
+}
+
 .advantages_container > li > p{
     font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.advantages_container > li > p > span{
+    font-family: "Space Grotesk", sans-serif;
 }
 
 .global_coverage{
@@ -566,9 +574,6 @@ body{
     line-height: 24px;
 
     transition: all 1s ease-in-out;
-
-    background-color: #000;
-    color: #fff;
 }
 
 .line_1, .line_2{
@@ -581,11 +586,11 @@ body{
 }
 
 .line_1{
-    background-color: #000000;
+    background-color: #fff;
 }
 
 .line_2{
-    background: #DADADA;
+    background: #212121;
 }
 
 .try_free{
@@ -604,7 +609,7 @@ body{
     width: 100%;
     height: 100%;
 
-    background-image: url("../images/white-background_elements.png");
+    background-image: url("../images/background_elements.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -652,21 +657,17 @@ body{
     font-weight: 700;
     line-height: 24px;
 
-    background-color: #000;
-    color: #fff;
+    border: 1px solid white;
 
-    box-shadow: 0px 5px 15px 0px #00000033;
+    box-shadow: 0px 5px 15px 0px #FFFFFF33;
 
     transition: all .3s ease-in-out;
-    border: 1px solid #000;
-
 }
 
 .add_bg > button:hover{
-    box-shadow: none;
-    background-color: transparent;
-    color: #000;
-    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid white;
 }
 
 .guide{
@@ -763,7 +764,7 @@ body{
     width: 8px;
     height: 8px;
 
-    background-color: #DADADA;
+    background-color: #212121;
 }
 
 .footer-content{
@@ -773,7 +774,7 @@ body{
     margin: 0 auto;
     margin-top: 80px;
 
-    border-top: 1px solid #DADADA;
+    border-top: 1px solid #212121;
 
     padding: 20px 45px;
     box-sizing: border-box;
@@ -814,7 +815,7 @@ body{
     line-height: 24px;
 
     cursor: pointer;
-    color: #000000;
+    color: #fff;
 }
 
 .footer-info > button{
@@ -827,9 +828,6 @@ body{
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-
-    background-color: #000;
-    color: #fff;
 }
 
 .footer-content > h2{
