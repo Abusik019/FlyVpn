@@ -39,6 +39,8 @@ body{
 
     background-color: rgba(11, 13, 19, 1) !important;
     color: #fff;
+
+    position: relative;
 }
 
 .navbar{
@@ -373,4 +375,437 @@ body{
     line-height: 26px;
 
     margin-top: 20px;
+}
+
+.start_now{
+    max-width: 1170px;
+    height: fit-content;
+    
+    margin: 0 auto;
+    margin-top: 180px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.start-now_left{
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+    width: 800px;
+    height: 286px;
+}
+
+.start-now_left-text{
+    max-width: 365px;
+}
+
+.start-now_left-text > h2{
+    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.start-now_left-text > h3{
+    font-family: 'Mont', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: left;
+
+    margin-top: 30px;
+}
+
+.start-now_left > img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.start-now_switch{
+    width: 470px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.switch-top_container, .switch-bottom_container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 15px;
+
+    position: relative;
+
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.switch-top_container > h2, .switch-bottom_container > h2{
+    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.34px;
+}
+
+.switch-top_container > h3, .switch-bottom_container > h3{
+    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.switch-top_container > button{
+    width: 97px;
+    height: 54px;
+
+    padding: 15px 20px;
+    box-sizing: border-box;
+
+    border-radius: 8px;
+
+    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+
+    background-color: rgba(197, 255, 255, 1);
+
+    transition: all 1s ease-in-out;
+}
+
+.line_1, .line_2{
+    height: 100%;
+    width: 2px;
+
+    position: absolute;
+    left: 0;
+    transition: background-color 0.5s ease;     
+}
+
+.line_1{
+    background-color: rgba(197, 255, 255, 1);
+}
+
+.line_2{
+    background: #212121;
+}
+
+.try_free{
+    max-width: 1170px;
+    height: 488px;
+    
+    margin: 0 auto;
+    margin-top: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    border-radius: 8px;
+
+    border: 1px solid  rgba(255, 255, 255, 0.3);
+
+    background-image: url('../images/try-free-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.try_free > h2{
+    font-family: 'Mont', sans-serif;
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 58.79px;
+    text-align: center;    
+
+    max-width: 470px;
+}
+
+.try_free > p{
+    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    
+    max-width: 470px;
+}
+
+.try_free > button{
+    width: 185px;
+    height: 64px;
+    
+    padding: 20px 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0px 5px 15px 0px rgba(60, 94, 217, 0.2);
+
+    background-color: rgba(197, 255, 255, 1);
+
+    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+
+    transition: box-shadow .3s ease-in-out;
+}
+
+.try_free > button:hover{
+    box-shadow: none;
+}
+
+.protect{
+    max-width: 1170px;
+    height: fit-content;
+    
+    margin: 0 auto;
+    margin-top: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.protect-img{
+    max-width: 670px;
+    max-height: 620px;
+    object-fit: cover;
+}
+
+.protect-text{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: start;
+    gap: 40px;
+
+    width: 370px;
+    height: fit-content;
+
+    box-sizing: border-box;
+}
+
+.protect-text > h2{
+    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.protect-text > p{
+    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.guide{
+    max-width: 1170px;
+    height: fit-content;
+    
+    margin: 0 auto;
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 100px;
+}
+
+.guide > h2{
+    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.guide > h3{
+    font-family: 'Mont', sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 55px;
+
+    margin-top: 20px;
+}
+
+.dropdown_pictures{
+    min-height: 380px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.dropdown_pictures > li{
+    min-height: 40px;
+
+    border-radius: 8px;
+    border: 1px solid #373737;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    position: relative;
+
+    cursor: pointer;
+}
+
+.dropdown_pictures > li > button{
+    background-color: transparent;
+
+    position: absolute;
+    right: 15px;
+}
+
+.dropdown_pictures > iframe {
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.dropdown_pictures > iframe.show {
+    max-height: 200px; 
+    opacity: 1;
+}
+
+.decor_elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 48px;
+    height: fit-content;
+
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.decor_elements > div {
+    width: 8px;
+    height: 8px;
+
+    background-color: #212121;
+}
+
+.footer-content{
+    max-width: 1170px;
+    height: fit-content;
+    
+    margin: 0 auto;
+    margin-top: 80px;
+
+    border-top: 1px solid #212121;
+
+    padding: 20px 45px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.footer-info > h2{
+    font-family: 'Mont', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: left;
+}
+
+.footer-info > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 432px;
+}
+
+.footer-info > ul > li > a{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    cursor: pointer;
+    color: #fff;
+}
+
+.footer-info > button{
+    width: 138px;
+    height: 54px;
+
+    padding: 15px 20px;
+
+    border-radius: 6px;
+
+    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+
+    background-color: rgba(197, 255, 255, 1);
+}
+
+.footer-content > h2{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+
+    color: #8A8A8A;
+
+    margin-top: 46px;
+}
+
+.bg-elements-2{
+    position: absolute;
+    left: 0;
+}
+
+.bg-elements-3{
+    position: absolute;
+    right: 0;
+
+    /* height: 1200px; */
+    width: 650px;
+    z-index: -1;
 }
