@@ -799,13 +799,13 @@ body{
 .bg-elements-2{
     position: absolute;
     left: 0;
+    z-index: -1;
 }
 
 .bg-elements-3{
     position: absolute;
     right: 0;
-
-    /* height: 1200px; */
+    
     width: 650px;
     z-index: -1;
 }

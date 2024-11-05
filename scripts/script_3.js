@@ -34,31 +34,31 @@ document.querySelectorAll('.dropdown_pictures > li').forEach(item => {
 });
 
 
-// // Burger menu
-// const burgerBtn = document.querySelector('.burger-menu');
-// const navItems = document.querySelector('.nav_items');
-// const btnImg = burgerBtn.firstChild;
-// // Stop scroll function
-// const scrollHandler = () => {
-//     window.scrollTo({ top: 0 });
-// };
+// Burger menu
+const burgerBtn = document.querySelector('.burger-menu');
+const navItems = document.querySelector('.nav_items');
+const btnImg = burgerBtn.firstChild;
+// Stop scroll function
+const scrollHandler = () => {
+    window.scrollTo({ top: 0 });
+};
 
-// burgerBtn?.addEventListener('click', () => {
-//     navItems.classList.toggle('open'); 
+burgerBtn?.addEventListener('click', () => {
+    navItems.classList.toggle('open'); 
         
-//     if(navItems.classList.contains('open')){
-//         btnImg.src ='../assets/images/icons/light-krestik.svg';
-//         window.addEventListener('scroll', scrollHandler)
-//     } else{
-//         btnImg.src ='../assets/images/icons/light-burger-menu.svg'
-//         window.removeEventListener('scroll', scrollHandler)
-//     }
-// })
+    if(navItems.classList.contains('open')){
+        btnImg.src ='../assets/images/icons/krestik.svg';
+        window.addEventListener('scroll', scrollHandler)
+    } else{
+        btnImg.src ='../assets/images/icons/burger-menu.svg'
+        window.removeEventListener('scroll', scrollHandler)
+    }
+})
  
-// document.querySelectorAll('.nav_items > li').forEach(item => {
-//     item.addEventListener('click', () => {
-//         navItems.classList.remove('open');
-//         btnImg.src ='../assets/images/icons/light-burger-menu.svg'
-//         window.removeEventListener('scroll', scrollHandler)
-//     })
-// })
+document.querySelectorAll('.nav_items > li').forEach(item => {
+    item.addEventListener('click', () => {
+        navItems.classList.remove('open');
+        btnImg.src ='../assets/images/icons/burger-menu.svg'
+        window.removeEventListener('scroll', scrollHandler)
+    })
+})

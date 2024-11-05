@@ -10,7 +10,7 @@ html {
 
     body {
         font-family: 'Body Grotesque Trial', sans-serif;
-        max-width: 567px;
+        max-width: 768px;
         height: fit-content;
         padding: 10px;
         box-sizing: border-box;
@@ -35,7 +35,7 @@ html {
         padding: 20px;
         box-sizing: border-box;
 
-        background-color: #000;
+        background-color: rgba(11, 13, 19, 1);
 
         z-index: 999;
 
@@ -70,7 +70,7 @@ html {
         top: 80px;
         right: 0;
         
-        background: #000;
+        background: #0B0D13;
         
         height: calc(100vh - 80px);
         width: 100vw;
@@ -120,13 +120,18 @@ html {
         font-size: 16px;
         line-height: 24px;
     
-        width: 138px;
-        height: 54px;
+        width: 158px;
+        height: 64px;
     
         padding: 15px 20px;
         box-sizing: border-box;
     
-        border-radius: 16px;
+        border-radius: 8px;
+
+        box-shadow: 0px 5px 15px 0px rgba(60, 94, 217, 0.2);
+
+        background-color: rgba(197, 255, 255, 1);
+        color: #000;
     }
 
     .header_content{
@@ -208,7 +213,7 @@ html {
 
     .global-coverage{
         max-width: 100%;
-        height: 588px;
+        height: 730px;
 
         flex-direction: column;
         align-items: center;
@@ -217,9 +222,16 @@ html {
     }
 
     .global-coverage > img{
-        /* max-width: 100%; */
         position: absolute;
         bottom: 0;
+    }
+    
+    .left-path_earth{
+        left: -20px;
+    }
+
+    .right-path_earth{
+        right: -20px;
     }
 
     .gl-cv-text-block{
@@ -274,15 +286,38 @@ html {
     .start_now{
         max-width: 100%;
 
-        margin-top: 150px;
+        margin-top: 0px;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+
+        padding-bottom: 300px;
     }
 
-    .start_now > h2{
+    .start-now_left{
+        height: fit-content;
+        width: 100%;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: static;
+    }
+    
+    .start-now_left-text{
+        width: 100%;
+    }
+
+    .start-now_left-text > h2{
         font-size: 14px;
         text-align: center;
     }
 
-    .start_now > h3{
+    .start-now_left-text > h3{
         font-size: 28px;
         line-height: 34px;
         text-align: center;
@@ -290,18 +325,20 @@ html {
         max-width: 100%;
     }
 
-    .start-now_content{
-        flex-direction: column-reverse;
-
-        margin-top: 30px;
-    }
-
-    .start-now_content > img{
+    #start-now_img{
         max-width: 100%;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        left: 50%;
+        transform: translateX(-50%);
     }
     
     .start-now_switch{
         max-width: 100%;
+        margin-top: 40px;
     }
 
     .try_free{
@@ -309,24 +346,24 @@ html {
         height: 389px;
 
         margin-top: 80px;
-    }
 
-    .add_bg{
-        padding: 0 10px;
+        border-radius: 16px;
+
+        padding: 20px;
         box-sizing: border-box;
-        background-size: cover;
-        background-position: right;
 
+        background-image: url('../images/try-free-bg-mobile.png');
     }
 
-    .add_bg > h2{
+    .try_free > h2{
         font-size: 28px;
         line-height: 34px;
     }
 
-    .add_bg > button{
+    .try_free > button{
         white-space: nowrap;
         width: fit-content;
+        border-radius: 8px;
     }
 
     .guide{
@@ -391,5 +428,17 @@ html {
         position: absolute;
         right: 10px;
     }
-  
+
+    .bg-elements-2{
+        left: -20px;
+        top: 100px;
+
+        max-height: 900px;
+    }
+    
+    .bg-elements-3{
+        max-height: 700px;
+        position: absolute;
+        right: 0px;
+    }
 }
