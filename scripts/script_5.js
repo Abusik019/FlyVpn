@@ -96,3 +96,11 @@ document.querySelectorAll('.nav_items > li').forEach(item => {
         window.removeEventListener('scroll', scrollHandler)
     })
 })
+
+
+// window.addEventListener('onload', () => {
+//     const currentUrl = window.location.hash;
+//     if(currentUrl){
+//         console.log(currentUrl);
+//     }
+// })
