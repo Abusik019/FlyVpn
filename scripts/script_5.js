@@ -44,9 +44,19 @@ changePictureBtn.addEventListener("mouseenter", () => {
     line2.style.backgroundColor = '#000';
 
     const switchCountSecond = document.getElementById("switch-count_second");
+    const switchBottomContainer = document.querySelector('.switch-bottom_container');
+    const switchBottomContent = document.querySelector('.switch-bottom_content');
     switchCountSecond.style.visibility = 'visible';
-    switchCountSecond.style.width = '75px';
+    switchBottomContent.style.marginLeft = 0;
+    if (window.innerWidth < 768) {
+        switchCountSecond.style.width = '30px';
+        switchBottomContainer.style.gap = '20px'
+    }else{
+        switchCountSecond.style.width = '75px';
+        switchBottomContainer.style.gap = '30px'
+    }
     switchCountSecond.style.opacity = '1';
+    switchBottomContainer.style.gap = '20px'
 })
 
 
@@ -98,9 +108,19 @@ document.querySelectorAll('.nav_items > li').forEach(item => {
 })
 
 
-// window.addEventListener('onload', () => {
-//     const currentUrl = window.location.hash;
-//     if(currentUrl){
-//         console.log(currentUrl);
-//     }
-// })
+// Anchor links
+window.addEventListener('hashchange', () => {
+    const currentHash = window.location.hash;
+    
+    if(currentHash){
+        const item = document.querySelector(currentHash);
+        const rect = item.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const targetPosition = rect.top + scrollTop - 60;
+    
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+});
