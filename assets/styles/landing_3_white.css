@@ -5,7 +5,7 @@
 /* font-family: 'Mont', sans-serif; */
 
 :root {
-    --section-bg-color: #131313;
+    --section-bg-color: #F0F0F0;
 }
 
 ::-webkit-scrollbar {
@@ -32,8 +32,8 @@ body{
     
     overflow-x: hidden; 
 
-    background-color: #000 !important;
-    color: #fff;
+    background-color: #ffffff !important;
+    color: #000000;
 }
 
 .header{
@@ -85,7 +85,7 @@ body{
     line-height: 24px;
 
     cursor: pointer;
-    color: #fff;
+    color: #000000;
 }
 
 #download-btn_inside{
@@ -112,6 +112,9 @@ body{
 
     position: absolute;
     right: 0;
+
+    background-color: #000;
+    color: #fff;
 }
 
 .header_content{
@@ -177,12 +180,15 @@ body{
     line-height: 24px;
 
     box-shadow: 0px 5px 15px 0px #FFFFFF33;
-
+    
     position: absolute;
     left: 0;
     bottom: 0;
 
     transition: all .3s ease-in-out;
+
+    background-color: #000;
+    color: #fff;
 }
 
 .btn_download:hover{
@@ -209,10 +215,10 @@ body{
     font-weight: 700;
     line-height: 24px;
 
-    color: #fff;
+    color: #000000;
     background-color: transparent;
 
-    border: 1px solid var(--button-outline_default, #FFFFFF);
+    border: 1px solid #000000;
 
     position: absolute;
     right: 0;
@@ -227,7 +233,8 @@ body{
 .btn_try:active{
     box-shadow: none;
 
-    background-color: #252525;
+    color: #ffffff;
+    background-color: #000;
 }
 
 
@@ -264,7 +271,7 @@ body{
     transform: rotate(-132deg);  
     clip-path: polygon(26% 0, 69% 0, 93% 100%, 7% 100%);    
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(62, 172, 232, 0) 100%);
+    background: linear-gradient(180deg, #000000 0%, rgba(62, 172, 232, 0) 100%);
 
     animation: rotateNeedle 5s ease-in-out forwards;
 
@@ -278,7 +285,7 @@ body{
 
     transform: translateX(-50%);
 
-    color: white;
+    color: rgb(0, 0, 0);    
 
     z-index: 1;
 }
@@ -589,7 +596,7 @@ body{
 
     border-radius: 30px;
 
-    background-color: #fff;
+    background-color: #131313;
 
     position: relative;
 }
@@ -644,7 +651,7 @@ body{
     font-weight: 700;
     line-height: 24.34px;
 
-    color: #000;
+    color: #fff;
 }
 
 .switch-top_content > h3, .switch-bottom_content > h3{
@@ -652,7 +659,7 @@ body{
     font-weight: 400;
     line-height: 22px;
 
-    color: #000;
+    color: #fff;
 }
 
 .switch-top_content > button{
@@ -670,8 +677,8 @@ body{
 
     transition: all 1s ease-in-out;
 
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .line_1, .line_2{
@@ -682,11 +689,11 @@ body{
 }
 
 .line_1{
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .line_2{
-    background: #DADADA;
+    background: #212121;
 }
 
 .start-now_download{
@@ -697,14 +704,14 @@ body{
     
     border-radius: 70px;
     
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
 
     position: absolute;
     right: 40px;
     bottom: 40px;
 
-    background-color: #fff;
-    color: #000;
+    background-color: transparent;
+    color: #ffffff;
 
     font-size: 16px;
     font-weight: 600;
@@ -880,7 +887,7 @@ body{
     width: 8px;
     height: 8px;
 
-    background-color: #212121;
+    background-color: #DADADA;
 }
 
 .footer-content{
@@ -929,7 +936,7 @@ body{
     line-height: 24px;
 
     cursor: pointer;
-    color: #fff;
+    color: #000000;
 }
 
 .footer-info > button{
@@ -943,6 +950,9 @@ body{
     line-height: 24px;
 
     border-radius: 70px;
+
+    background-color: #000;
+    color: #fff;
 }
 
 .footer-content > h2{
