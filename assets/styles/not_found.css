@@ -1,0 +1,98 @@
+@import url('https://fonts.cdnfonts.com/css/body-grotesque-trial');
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+@font-face {
+    font-family: "Body Grotesque Regular Trial";
+    src: url("../fonts/Body-Grotesque-Regular-trial.ttf");
+}
+
+@font-face {
+    font-family: "Body Grotesque Bold Trial";
+    src: url("../fonts/Body-Grotesque-Bold-trial.ttf");
+}
+
+body{
+    background-color: #080808 !important;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    overflow: hidden;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+*{
+    color: #fff;
+
+    font-family: 'Body Grotesque Trial', sans-serif;
+}
+
+h1, p{
+    margin: 0;
+}
+
+h1{
+    font-family: 'Body Grotesque Bold Trial', sans-serif;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+p{
+    font-family: 'Body Grotesque Regular Trial', sans-serif;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: center;
+
+    margin-top: 15px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: fit-content;
+}
+
+@media screen and (orientation: portrait) and (max-width: 768px) {
+    .content > img{
+        width: calc(100vw - 40px);
+    }
+
+    h1{
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    p{
+        font-size: 13px;
+        line-height: 1.1;
+    
+        margin-top: 8px;
+    }
+}
