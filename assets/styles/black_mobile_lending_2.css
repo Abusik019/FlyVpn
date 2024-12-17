@@ -9,7 +9,6 @@ html {
     }
 
     body {
-        font-family: 'Body Grotesque Trial', sans-serif;
         max-width: 768px;
         height: fit-content;
         padding: 10px;
@@ -116,7 +115,6 @@ html {
     #download-btn_inside{
         display: block;
 
-        font-family: "Body Grotesque Bold Trial", sans-serif;
         font-size: 16px;
         line-height: 24px;
     

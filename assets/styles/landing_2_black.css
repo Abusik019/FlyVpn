@@ -1,18 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/mont');
-
-/* font-family: "Montserrat", sans-serif; */
-/* font-family: 'Mont', sans-serif; */
-
-@font-face {
-    font-family: "Body Grotesque Regular Trial";
-    src: url("../fonts/Body-Grotesque-Regular-trial.ttf");
-}
-
-@font-face {
-    font-family: "Body Grotesque Bold Trial";
-    src: url("../fonts/Body-Grotesque-Bold-trial.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -28,8 +16,12 @@
     background-color: #555;
 }
 
+*{
+    font-family: "Libre Franklin", sans-serif;
+}
+
 body{
-    font-family: 'Body Grotesque Trial', sans-serif;
+    font-family: "Libre Franklin", sans-serif;
 
     max-width: 1350px;
 
@@ -92,8 +84,8 @@ body{
 }
 
 .download_btn{
-    font-family: 'Body Grotesque Bold Trial', sans-serif;
     font-size: 16px;
+    font-weight: 700;
     line-height: 24px;
 
     width: 138px;
@@ -136,7 +128,6 @@ body{
 }
 
 .header_container > p{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -166,7 +157,6 @@ body{
 
     border-radius: 8px;
 
-    font-family: "Body Grotesque Bold Trial";
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -202,7 +192,6 @@ body{
 
     border-radius: 8px;
 
-    font-family: "Body Grotesque Bold Trial";
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -248,7 +237,6 @@ body{
 }
 
 .advantages > h2{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -359,7 +347,6 @@ body{
 }
 
 .gl-cv-text-block > h2{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -377,7 +364,6 @@ body{
 }
 
 .gl-cv-text-block > p{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -413,7 +399,6 @@ body{
 }
 
 .start-now_left-text > h2{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -468,14 +453,12 @@ body{
 }
 
 .switch-top_container > h2, .switch-bottom_container > h2{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24.34px;
 }
 
 .switch-top_container > h3, .switch-bottom_container > h3{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -490,7 +473,6 @@ body{
 
     border-radius: 8px;
 
-    font-family: "Body Grotesque Bold Trial", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -551,7 +533,6 @@ body{
 }
 
 .try_free > p{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -572,7 +553,6 @@ body{
 
     background-color: rgba(197, 255, 255, 1);
 
-    font-family: "Body Grotesque Bold Trial", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -616,14 +596,12 @@ body{
 }
 
 .protect-text > h2{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 46px;
 }
 
 .protect-text > p{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -643,7 +621,6 @@ body{
 }
 
 .guide > h2{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -784,7 +761,6 @@ body{
 
     border-radius: 6px;
 
-    font-family: "Body Grotesque Bold Trial", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;

@@ -1,5 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/body-grotesque-trial');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 
@@ -17,18 +16,8 @@
     background-color: #555;
 }
 
-@font-face {
-    font-family: "Body Grotesque Regular Trial";
-    src: url("../fonts/Body-Grotesque-Regular-trial.ttf");
-}
-
-@font-face {
-    font-family: "Body Grotesque Bold Trial";
-    src: url("../fonts/Body-Grotesque-Bold-trial.ttf");
-}
-
 body{
-    font-family: 'Body Grotesque Trial', sans-serif;
+    font-family: "Libre Franklin", sans-serif;
 
     max-width: 1350px;
 
@@ -55,7 +44,7 @@ body{
 }
 
 .navbar > h1{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
@@ -74,7 +63,7 @@ body{
 }
 
 .nav_items > li > a{
-    font-family: 'Body Grotesque Regular Trial', sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     line-height: 24px;
 
@@ -91,7 +80,7 @@ body{
 }
 
 .download_btn{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     line-height: 24px;
 
@@ -125,14 +114,14 @@ body{
 }
 
 .left-hd_container > h2{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 64px;
     font-weight: 700;
     line-height: 77px;
 }
 
 .left-hd_container > p{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -162,7 +151,7 @@ body{
 
     border-radius: 16px;
 
-    font-family: "Body Grotesque Bold Trial";
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -195,7 +184,7 @@ body{
 
     border-radius: 16px;
 
-    font-family: "Body Grotesque Bold Trial";
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -283,7 +272,7 @@ body{
 }
 
 .speed > h3{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 29px;
@@ -303,7 +292,7 @@ body{
 }
 
 .advantages > h2{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -349,25 +338,17 @@ body{
 }
 
 .advantages_container > li > h2{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
 }
 
-.advantages_container > li > h2 > span{
-    font-family: "Space Grotesk", sans-serif;
-}
-
 .advantages_container > li > p{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
-}
-
-.advantages_container > li > p > span{
-    font-family: "Space Grotesk", sans-serif;
 }
 
 .global_coverage{
@@ -403,7 +384,7 @@ body{
 }
 
 .global_coverage-text > h2{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -412,14 +393,14 @@ body{
 }
 
 .global_coverage-text > h3{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 46px;
     font-weight: 700;
     line-height: 55px;
 }
 
 .global_coverage-text > p{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
@@ -466,14 +447,14 @@ body{
 }
 
 .protect-text > h2{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 36px;
     font-weight: 700;
     line-height: 46px;
 }
 
 .protect-text > p{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -488,7 +469,7 @@ body{
 }
 
 .start_now > h2{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -498,7 +479,7 @@ body{
 }
 
 .start_now > h3{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 46px;
     font-weight: 700;
     line-height: 55px;
@@ -546,14 +527,14 @@ body{
 }
 
 .switch-top_container > h2, .switch-bottom_container > h2{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 24.34px;
 }
 
 .switch-top_container > h3, .switch-bottom_container > h3{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -568,7 +549,7 @@ body{
 
     border-radius: 16px;
 
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -622,7 +603,7 @@ body{
 }
 
 .add_bg > h2{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 46px;
     font-weight: 700;
     line-height: 55px;
@@ -632,17 +613,13 @@ body{
 }
 
 .add_bg > h3{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: center;
 
     max-width: 470px;
-}
-
-.add_bg > h3 > span{
-    font-family: "Space Grotesk", sans-serif;
 }
 
 .add_bg > button{
@@ -652,7 +629,7 @@ body{
     box-sizing: border-box;
     border-radius: 16px;
 
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -684,7 +661,7 @@ body{
 }
 
 .guide > h2{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
@@ -693,7 +670,7 @@ body{
 }
 
 .guide > h3{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 46px;
     font-weight: 700;
     line-height: 55px;
@@ -793,7 +770,7 @@ body{
 }
 
 .footer-info > h2{
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
@@ -809,7 +786,7 @@ body{
 }
 
 .footer-info > ul > li > a{
-    font-family: "Body Grotesque Regular Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -824,7 +801,7 @@ body{
     padding: 15px 20px;
     border-radius: 16px;
 
-    font-family: "Body Grotesque Bold Trial", sans-serif;
+    font-family: "Libre Franklin", sans-serif;  
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
